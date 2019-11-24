@@ -6,12 +6,14 @@ import git_assignment_initial.ITopic;
 
 public class TwoPowerN implements ITopic {
 	public static long Get2PN(int n) {
-		return 32768;
+		return return (double)(2 * n);
 	}
 
 	@Override
 	public String NotifyTopic(int input) {
-
-		return "Input = 10\n2PN = " + 1024;
+                double ans = Get2PN(input);
+		String output = PrintStyle.print(input, "2PN") + ans;
+		return output;
+		
 	}
 }
