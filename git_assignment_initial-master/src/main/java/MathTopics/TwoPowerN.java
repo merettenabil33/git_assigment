@@ -11,9 +11,9 @@ public class TwoPowerN implements ITopic {
 
 	@Override
 	public String NotifyTopic(int input) {
-                long ans = Get2PN(input);
-		String output = PrintStyle.print(input, "2PN") + ans;
-		return output;
+               long ans = Get2PN(input);
+	       String output = PrintStyle.print(input, "2PN") + ans;
+	       return output;
 		
 	}
 }
